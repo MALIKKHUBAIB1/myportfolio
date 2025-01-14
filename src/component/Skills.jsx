@@ -19,7 +19,7 @@ function Skills() {
     { name: "Linux", category: "Os" },
   ];
   return (
-    <div className="p-4 -mt-4 mb-2">
+    <>
       <Heading content={"Skills"} />
       <div className="flex flex-wrap justify-center gap-4">
         {skills.map((skill, i) => {
@@ -33,7 +33,7 @@ function Skills() {
           );
         })}
       </div>
-    </div>
+    </>
   );
 }
 

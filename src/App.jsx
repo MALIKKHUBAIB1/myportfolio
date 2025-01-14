@@ -1,6 +1,7 @@
 import "./App.css";
 import AboutMe from "./component/AboutMe";
 import AboutSection from "./component/AboutSection";
+import Educations from "./component/Educations";
 import Imagesection from "./component/Imagesection";
 import Skills from "./component/Skills";
 import WorkExperience from "./component/WorkExperience";
@@ -18,11 +19,12 @@ function App() {
       {/* About Me Section */}
       <div className="p-4">
         <AboutMe />
+        <Skills />
         <WorkExperience />
       </div>
       {/* SKills  */}
-      <div>
-        <Skills />
+      <div className="-mt-4 mb-2 p-4">
+        <Educations />
       </div>
     </div>
   );
