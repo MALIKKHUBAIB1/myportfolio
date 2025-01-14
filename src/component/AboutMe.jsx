@@ -1,7 +1,9 @@
+import Heading from "../utils/Heading";
+
 function AboutMe() {
   return (
     <div>
-      <h1 className="text-3xl font-bold my-3">About Me</h1>
+      <Heading content={"About Me"} />
       <div className="text-justify">
         I am a Junior Full Stack Engineer passionate about building scalable web
         applications. I have experience with technologies like React, Node.js,
