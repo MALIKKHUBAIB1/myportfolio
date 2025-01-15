@@ -15,7 +15,6 @@ function App() {
         {/* Image Section */}
         <Imagesection />
       </div>
-
       {/* About Me Section */}
       <div className="p-4">
         <AboutMe />
