@@ -1,10 +1,10 @@
 function Imagesection() {
   return (
-    <div className="w-full md:w-4/12 flex justify-center items-center m-3">
+    <div className="w-full md:w-5/12 flex justify-center md:justify-start m-4 md:m-0">
       <img
         src="images/photo.jpeg"
-        alt="photo"
-        className="w-full h-auto sm:h-[250px] md:h-[300px] lg:h-[350px] rounded-lg"
+        alt="profile"
+        className="w-[200px] h-[200px] sm:w-[250px] sm:h-[250px] md:w-[300px] md:h-[300px] rounded-full object-cover shadow-lg mt-[-40px]"
       />
     </div>
   );

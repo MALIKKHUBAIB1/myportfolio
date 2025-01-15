@@ -1,4 +1,14 @@
+/* body {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.9), rgba(3, 3, 16, 1));
+  color: white;
+} */
+
+/* body {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.9), rgba(3, 3, 16, 1));
+  color: white;
+}
+ */
 body {
-  background-color: rgb(3, 3, 16);
+  background: linear-gradient(135deg, rgba(0, 0, 0, 1), rgba(3, 3, 16, 1));
   color: white;
 }

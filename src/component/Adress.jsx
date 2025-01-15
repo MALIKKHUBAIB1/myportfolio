@@ -1,6 +1,6 @@
 function Adress() {
   return (
-    <div className="text-start p-4">
+    <div className="text-start my-2">
       <h1 className="text-white text-xl mb-2">khubaib9221@gmail.com</h1>
       <h2 className="text-white text-lg mb-2">Delhi NCR</h2>
       <h3 className="text-white text-lg">

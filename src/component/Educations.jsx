@@ -2,7 +2,7 @@ import Heading from "../utils/Heading";
 
 function Educations() {
   return (
-    <div className="w-full">
+    <div className="w-full -mt-7">
       <Heading content={"Education"} />
       <div className="bg-slate-700 p-6 rounded-xl shadow-lg my-4 relative overflow-hidden w-full">
         {/* Top-Right Button Link */}

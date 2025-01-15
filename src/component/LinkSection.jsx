@@ -15,8 +15,7 @@ const profileIcons = [
   {
     id: 4,
     name: "LeetCode",
-    // Use the custom icon approach here
-    icon: "leetcode", // Custom placeholder to signify this is a custom icon
+    icon: "leetcode",
     link: "https://leetcode.com/u/khubaibtech",
   },
   {
@@ -35,30 +34,26 @@ const profileIcons = [
 
 function LinkSection() {
   return (
-    <div className="flex flex-wrap justify-start my-6">
-      {profileIcons.map((item) => {
-        return (
-          <a
-            className="m-3"
-            key={item.id}
-            href={item.link}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {item.icon === "leetcode" ? (
-              // Custom LeetCode icon
-              <img
-                src="https://cdn.iconscout.com/icon/free/png-512/free-leetcode-logo-icon-download-in-svg-png-gif-file-formats--technology-social-media-vol-4-pack-logos-icons-2944960.png?f=webp&w=256"
-                alt="LeetCode"
-                className="w-8 h-8"
-              />
-            ) : (
-              // FontAwesome Icons
-              <FontAwesomeIcon icon={item.icon} size="2x" />
-            )}
-          </a>
-        );
-      })}
+    <div className="flex flex-wrap justify-start gap-4 mt-6">
+      {profileIcons.map((item) => (
+        <a
+          className="p-2 hover:scale-105 transition-transform"
+          key={item.id}
+          href={item.link}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {item.icon === "leetcode" ? (
+            <img
+              src="https://cdn.iconscout.com/icon/free/png-512/free-leetcode-logo-icon-download-in-svg-png-gif-file-formats--technology-social-media-vol-4-pack-logos-icons-2944960.png?f=webp&w=256"
+              alt="LeetCode"
+              className="w-8 h-8"
+            />
+          ) : (
+            <FontAwesomeIcon icon={item.icon} size="2x" />
+          )}
+        </a>
+      ))}
     </div>
   );
 }

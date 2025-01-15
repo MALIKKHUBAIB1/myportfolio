@@ -2,9 +2,9 @@ import Heading from "../utils/Heading";
 
 function AboutMe() {
   return (
-    <div className="sm:p-6 md:p-8">
+    <div className="">
       <Heading content={"About Me"} />
-      <div className="text-justify text-base sm:text-lg md:text-xl lg:text-2xl ">
+      <div className="text-justify text-base sm:text-lg md:text-xl lg:text-xl ">
         I am a Junior Full Stack Engineer passionate about building scalable web
         applications. I have experience with technologies like React, Node.js,
         Express, MongoDB, and AWS. Along with development, I focus on improving

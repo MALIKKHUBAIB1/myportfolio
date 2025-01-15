@@ -19,7 +19,7 @@ function Skills() {
   ];
 
   return (
-    <div className="p-4 mx-2">
+    <>
       <Heading content={"Skills"} />
       <div className="flex flex-wrap justify-start gap-4">
         {skills.map((skill, i) => {
@@ -33,7 +33,7 @@ function Skills() {
           );
         })}
       </div>
-    </div>
+    </>
   );
 }
 

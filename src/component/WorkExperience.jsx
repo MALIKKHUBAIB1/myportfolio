@@ -46,7 +46,7 @@ function WorkExperience() {
   ];
 
   return (
-    <div className="w-full p-4">
+    <div className="w-full mt-10">
       <Heading content={"Project"} />
       <div className="w-full">
         {projects.map((project) => {

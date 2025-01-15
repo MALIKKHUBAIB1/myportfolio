@@ -7,25 +7,28 @@ import Skills from "./component/Skills";
 import WorkExperience from "./component/WorkExperience";
 function App() {
   return (
-    <div className="text-xl w-full md:w-3/4 lg:w-2/3 mx-auto">
-      <div className="flex flex-col md:flex-row my-8">
-        {/* About Section */}
+    <div className="text-xl w-full max-w-screen-lg mx-auto px-4">
+      {/* About Section with Image */}
+      <div className="flex flex-col md:flex-row md:space-x-6 items-center text-start">
         <AboutSection />
-        {/* Image Section */}
         <Imagesection />
       </div>
-
       {/* About Me Section */}
-      <div className="">
+      <div className="p-4">
         <AboutMe />
-        {/* Skills */}
+      </div>
+      {/* Skills & Work Experience */}
+      <div className="p-4">
         <Skills />
         <WorkExperience />
       </div>
-      <div className="-mt-4 mb-2 p-4">
+
+      {/* Education Section */}
+      <div className=" p-4">
         <Educations />
       </div>
     </div>
   );
 }
+
 export default App;
