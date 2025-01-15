@@ -46,31 +46,39 @@ function WorkExperience() {
   ];
 
   return (
-    <div>
+    <div className="w-full p-4">
       <Heading content={"Project"} />
-      {projects.map((project) => {
-        return (
-          <div
-            className="bg-slate-700 h-52 rounded-md my-2 p-4 relative overflow-auto"
-            key={project.id}
-          >
-            {/* Top-Right Button Link */}
-            <a
-              href="#"
-              className="absolute top-2 right-2  text-gray-200 text-sm px-3 py-1 rounded-md hover:bg-gray-600"
+      <div className="w-full">
+        {projects.map((project) => {
+          return (
+            <div
+              className="bg-slate-700 h-auto rounded-md p-6 relative shadow-lg mb-4 w-full"
+              key={project.id}
             >
-              View Details
-            </a>
+              {/* Top-Right Button Link */}
+              <a
+                href="#"
+                className="absolute top-2 right-2 text-gray-200 text-sm px-3 py-1 rounded-md hover:bg-gray-600"
+              >
+                View Details
+              </a>
 
-            {/* Project Details */}
-            <h1 className="font-bold text-2xl">{project.name}</h1>
-            <h2 className="font-bold my-1">
-              Tech Stack : {project.technologies.join(" ")}
-            </h2>
-            <div>{project.description.join(" ")}</div>
-          </div>
-        );
-      })}
+              {/* Project Details */}
+              <h1 className="font-bold text-xl sm:text-2xl text-white">
+                {project.name}
+              </h1>
+              <h2 className="font-bold my-2 text-gray-300 text-sm sm:text-base">
+                Tech Stack: {project.technologies.join(", ")}
+              </h2>
+              <div className="text-gray-300 text-sm sm:text-base">
+                {project.description.map((desc, index) => (
+                  <p key={index}>{desc}</p>
+                ))}
+              </div>
+            </div>
+          );
+        })}
+      </div>
     </div>
   );
 }

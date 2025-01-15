@@ -13,27 +13,27 @@ function Skills() {
     { name: "Redux Toolkit", category: "Frameworks/Libraries" },
     { name: "TypeScript", category: "Languages" },
     { name: "MongoDb", category: "DataBase" },
-    { name: "Tailwind ", category: "Css" },
-
+    { name: "Tailwind", category: "Css" },
     { name: "AWS", category: "Cloud" },
     { name: "Linux", category: "Os" },
   ];
+
   return (
-    <>
+    <div className="p-4 mx-2">
       <Heading content={"Skills"} />
-      <div className="flex flex-wrap justify-center gap-4">
+      <div className="flex flex-wrap justify-start gap-4">
         {skills.map((skill, i) => {
           return (
             <div
               key={i}
-              className="bg-slate-300 p-3 rounded-lg text-black shadow-md hover:shadow-lg transition-shadow duration-200"
+              className="bg-slate-300 p-3 rounded-lg text-black shadow-md hover:shadow-lg transition-shadow duration-200 min-w-max"
             >
               {skill.name}
             </div>
           );
         })}
       </div>
-    </>
+    </div>
   );
 }
 
