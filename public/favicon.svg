@@ -1,0 +1,36 @@
+<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="128" height="128" rx="28" fill="#0F172A"/>
+
+  <defs>
+    <linearGradient id="grad" x1="0" y1="0" x2="128" y2="128">
+      <stop offset="0%" stop-color="#3B82F6"/>
+      <stop offset="100%" stop-color="#8B5CF6"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Left Bracket -->
+  <path
+    d="M42 38L22 64L42 90"
+    stroke="url(#grad)"
+    stroke-width="10"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+
+  <!-- Right Bracket -->
+  <path
+    d="M86 38L106 64L86 90"
+    stroke="url(#grad)"
+    stroke-width="10"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+
+  <!-- Slash -->
+  <path
+    d="M74 28L54 100"
+    stroke="white"
+    stroke-width="8"
+    stroke-linecap="round"
+  />
+</svg>

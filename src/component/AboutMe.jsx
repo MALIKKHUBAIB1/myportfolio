@@ -5,13 +5,16 @@ function AboutMe() {
     <div className="">
       <Heading content={"About Me"} />
       <div className="text-justify text-base sm:text-lg md:text-xl lg:text-xl ">
-        I am a Junior Full Stack Engineer passionate about building scalable web
-        applications. I have experience with technologies like React, Node.js,
-        Express, MongoDB, and AWS. Along with development, I focus on improving
-        my problem-solving skills using Data Structures and Algorithms. I enjoy
-        writing clean, efficient code and constantly aim to improve my skills to
-        create better solutions. My goal is to grow in both development and
-        problem-solving to build impactful and high-performance applications.
+        I am a Full Stack Engineer with expertise in building scalable and
+        high-performance web applications. I specialize in modern technologies
+        including React, React Native, Node.js, Express, MongoDB, and AWS. I
+        develop robust solutions with a strong foundation in Data Structures and
+        Algorithms, ensuring optimal performance and efficiency. My approach
+        emphasizes writing clean, maintainable code and implementing best
+        practices across the full development lifecycle. I'm committed to
+        delivering impactful, production-ready applications and continuously
+        expanding my technical expertise in both frontend and backend
+        development.
       </div>
     </div>
   );
